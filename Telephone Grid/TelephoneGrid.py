@@ -12,5 +12,4 @@ for i in range(0, N, 1):
 
     for p in per:
         ans.append("[" + ",".join(p) + "]")
-
     result.write("".join(ans) + "\n")
