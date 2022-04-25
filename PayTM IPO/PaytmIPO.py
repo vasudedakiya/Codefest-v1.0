@@ -10,7 +10,6 @@ for i in range(0, N, 1):
     arr = [int(x) for x in arr]
     indx = profit = j = h = 0
     buy = arr[0]
-    ans = []
     for price in arr:
         j += 1
         if (price - buy) > profit:
@@ -28,6 +27,4 @@ for i in range(0, N, 1):
     if minute == 0:
         minute = "00"
 
-    ans.append(f"[{profit},{h}.{minute}]")
-    print(ans, end="\n")
     result.write(f"[{profit},{h}.{minute}]" + "\n")
